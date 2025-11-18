@@ -4,7 +4,7 @@
     {
         public string ProductId { get; set; }
         public int QuantityChanges { get; set; }
-        public string WarehouseLocation { get; set; }
+        public string? WarehouseLocation { get; set; }
 
 
     }
