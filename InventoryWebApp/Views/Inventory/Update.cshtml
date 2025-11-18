@@ -1,0 +1,18 @@
+﻿@model InventoryWebApp.Models.UpdateInventoryRequest
+
+<h2> Actualizacion de Inventario </h2>
+
+
+<form asp-action="Update" method="post">
+    @Html.AntiForgeryToken()
+    <div>
+        <label asp-for="ProductId">ID del producto</label>
+        <input asp-for="ProductId" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="QuantityChanges">Cambio de Cantidad</label>
+        <input asp-for="QuantityChanges" class="form-control" />
+    </div>
+
+    <button type="submit">Enviar Actualizacion</button>
+</form>
